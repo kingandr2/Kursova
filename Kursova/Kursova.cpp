@@ -10,6 +10,7 @@ using namespace std;
 
 int main()
 {
+	system("chcp 65001");
 	setlocale(0, "ua_UA.UTF-8");
     string readFile, writeFile;
     cout << "Введіть файл з даними:" << endl;
