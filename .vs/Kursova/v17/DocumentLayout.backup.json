@@ -1,0 +1,122 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Andrew\\source\\repos\\Kursova\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{0578E7FA-2146-402A-B728-76BEF26A0A6B}|Kursova\\Kursova.vcxproj|C:\\Users\\Andrew\\source\\repos\\Kursova\\Kursova\\empty example.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{0578E7FA-2146-402A-B728-76BEF26A0A6B}|Kursova\\Kursova.vcxproj|solutionrelative:Kursova\\empty example.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0578E7FA-2146-402A-B728-76BEF26A0A6B}|Kursova\\Kursova.vcxproj|C:\\Users\\Andrew\\source\\repos\\Kursova\\Kursova\\data.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{0578E7FA-2146-402A-B728-76BEF26A0A6B}|Kursova\\Kursova.vcxproj|solutionrelative:Kursova\\data.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0578E7FA-2146-402A-B728-76BEF26A0A6B}|Kursova\\Kursova.vcxproj|C:\\Users\\Andrew\\source\\repos\\Kursova\\Kursova\\result.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{0578E7FA-2146-402A-B728-76BEF26A0A6B}|Kursova\\Kursova.vcxproj|solutionrelative:Kursova\\result.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0578E7FA-2146-402A-B728-76BEF26A0A6B}|Kursova\\Kursova.vcxproj|C:\\Users\\Andrew\\source\\repos\\Kursova\\Kursova\\FileManager.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{0578E7FA-2146-402A-B728-76BEF26A0A6B}|Kursova\\Kursova.vcxproj|solutionrelative:Kursova\\FileManager.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0578E7FA-2146-402A-B728-76BEF26A0A6B}|Kursova\\Kursova.vcxproj|C:\\Users\\Andrew\\source\\repos\\Kursova\\Kursova\\Kursova.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{0578E7FA-2146-402A-B728-76BEF26A0A6B}|Kursova\\Kursova.vcxproj|solutionrelative:Kursova\\Kursova.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0578E7FA-2146-402A-B728-76BEF26A0A6B}|Kursova\\Kursova.vcxproj|C:\\Users\\Andrew\\source\\repos\\Kursova\\Kursova\\Counters.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{0578E7FA-2146-402A-B728-76BEF26A0A6B}|Kursova\\Kursova.vcxproj|solutionrelative:Kursova\\Counters.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "empty example.txt",
+              "DocumentMoniker": "C:\\Users\\Andrew\\source\\repos\\Kursova\\Kursova\\empty example.txt",
+              "RelativeDocumentMoniker": "Kursova\\empty example.txt",
+              "ToolTip": "C:\\Users\\Andrew\\source\\repos\\Kursova\\Kursova\\empty example.txt",
+              "RelativeToolTip": "Kursova\\empty example.txt",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2024-12-10T15:19:43.18Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "result.txt",
+              "DocumentMoniker": "C:\\Users\\Andrew\\source\\repos\\Kursova\\Kursova\\result.txt",
+              "RelativeDocumentMoniker": "Kursova\\result.txt",
+              "ToolTip": "C:\\Users\\Andrew\\source\\repos\\Kursova\\Kursova\\result.txt",
+              "RelativeToolTip": "Kursova\\result.txt",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2024-12-08T14:04:14.393Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "data.txt",
+              "DocumentMoniker": "C:\\Users\\Andrew\\source\\repos\\Kursova\\Kursova\\data.txt",
+              "RelativeDocumentMoniker": "Kursova\\data.txt",
+              "ToolTip": "C:\\Users\\Andrew\\source\\repos\\Kursova\\Kursova\\data.txt",
+              "RelativeToolTip": "Kursova\\data.txt",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAA7AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2024-11-21T07:54:05.217Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Counters.cpp",
+              "DocumentMoniker": "C:\\Users\\Andrew\\source\\repos\\Kursova\\Kursova\\Counters.cpp",
+              "RelativeDocumentMoniker": "Kursova\\Counters.cpp",
+              "ToolTip": "C:\\Users\\Andrew\\source\\repos\\Kursova\\Kursova\\Counters.cpp",
+              "RelativeToolTip": "Kursova\\Counters.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-11-21T07:57:56.05Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Kursova.cpp",
+              "DocumentMoniker": "C:\\Users\\Andrew\\source\\repos\\Kursova\\Kursova\\Kursova.cpp",
+              "RelativeDocumentMoniker": "Kursova\\Kursova.cpp",
+              "ToolTip": "C:\\Users\\Andrew\\source\\repos\\Kursova\\Kursova\\Kursova.cpp",
+              "RelativeToolTip": "Kursova\\Kursova.cpp",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAADEAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-11-19T15:55:58.594Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "FileManager.cpp",
+              "DocumentMoniker": "C:\\Users\\Andrew\\source\\repos\\Kursova\\Kursova\\FileManager.cpp",
+              "RelativeDocumentMoniker": "Kursova\\FileManager.cpp",
+              "ToolTip": "C:\\Users\\Andrew\\source\\repos\\Kursova\\Kursova\\FileManager.cpp*",
+              "RelativeToolTip": "Kursova\\FileManager.cpp*",
+              "ViewState": "AgIAACcAAAAAAAAAAAAAAD4AAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-12-02T19:25:09.592Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
