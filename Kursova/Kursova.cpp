@@ -1,81 +1,70 @@
-﻿// Kursova.cpp : This file contains the 'main' function. Program execution begins and ends there.
-//
-
 #include <iostream>
 #include <string>
 #include "FileManager.cpp"
 #include "Counters.cpp"
 #include <locale>
+#include <algorithm>
 
 using namespace std;
 
-string getFileName(bool isRead) {
-	if (isRead) return "empty example.txt";
-	else return "result.txt";
-	/*string fileName;
-	cout << "Enter the file name:" << endl;
-	getline(cin, fileName);
-	return fileName;*/
-}
 
 int main()
 {
-	setlocale(LC_ALL, "Russian");
-
-	//cout << locale().name();
-	string readFileName = getFileName(true);
-	string writeFileName = getFileName(false);
-	FileManager* manager = nullptr;
-	wstring read;
+	setlocale(LC_ALL, "ukrainian");
+    string readFile, writeFile;
+    cout << "Введіть файл з даними:" << endl;
+    cin >> readFile;
+    cout << "Введіть файл для результатів:" << endl;
+    cin >> writeFile;
+	FileManager *manager = nullptr;
+	string read;
 	while (true) {
+	    if (!(readFile.compare(readFile.length() - 4, 4, ".txt") == 0) || !(writeFile.compare(writeFile.length() - 4, 4, ".txt") == 0)){
+	        cout << "Файл не є текстовим. Спробуйте ще раз: " << endl;
+	        cin >> readFile;
+	        cin >> writeFile;
+	        continue;
+	    }
 		try {
-			manager = new FileManager(readFileName, writeFileName);
+			manager = new FileManager(readFile, writeFile);
 			read = manager->read();
 			if (read.empty()) {
-				cout << "Entered file is empty. Try again:" << endl;
-				getline(cin, readFileName);
+				cout << "Введений файл пустий. Спробуйте ще раз:" << endl;
+                cin >> readFile;
 				continue;
 			}
 			else break;
 		}
 		catch (FileInvalidException e) {
-			cout << "Invalid file. Try again:" << endl;
-			getline(cin, readFileName);
+			cout << "Недійсний файл. Спробуйте ще раз:" << endl;
+			cin >> readFile;
+			cin >> writeFile;
 			continue;
 		}
-
 	}
-	try {
-		while (manager->available()) {
-			read = manager->read();
-		}
-	}
-	catch (exception e) { cout << "There was an exception when reading the file. It may have not been analysed fully." << endl; }
-	wprintf(L"Це було прочитано: ");
-	wcout << endl << read << endl;
-	manager->write(read);
-
-	cout << "Processing information..." << endl;
+    
 	CountVoiceless count1 = CountVoiceless();
 	CountVoiced count2 = CountVoiced();
-	//CountVoiceless count3 = CountVoiceless();
-	//CountLowercase count4 = CountLowercase();
-	try {
-		cout << "Amount of words starting with voiceless letters: " << count1.count(read) << endl;
-		cout << "Amount of words starting with voiced letters: " << count2.count(read) << endl;
-		//cout << "Amount of words starting with uppercase letter: " << count3.count(read) << endl;
-		//cout << "Amount of words starting with lowercase letter: " << count4.count(read) << endl;
-	}
-	catch (UnsupportedCharacterException e) { cout << "Unsupported character detected." << endl; }
+	CountSoft count3 = CountSoft();
+	CountHard count4 = CountHard();
+	cout << "Прочитано з файлу: " << endl << read << endl;
+	/*for (char a : read){
+		manager->write();
+	}*/
+	string voiceless = "Кількість слів, що починаються з глухих голосних літер: ";
+	string voiced = "Кількість слів, що починаються з дзвінких голосних літер: ";
+	string soft = "Кількість слів, що починаються з м'яких приголосних літер: ";
+	string hard = "Кількість слів, що починаються з твердих приголосних літер: ";
+	voiceless.append(to_string(count1.count(read)));
+	voiced.append(to_string(count2.count(read)));
+	soft.append(to_string(count3.count(read)));
+	hard.append(to_string(count4.count(read)));
+	cout << voiceless << endl;
+	cout << voiced << endl;
+	cout << soft << endl;
+	cout << hard << endl;
+	manager->write(voiceless);
+	manager->write(voiced);
+	manager->write(soft);
+	manager->write(hard);
 }
-
-// Run program: Ctrl + F5 or Debug > Start Without Debugging menu
-// Debug program: F5 or Debug > Start Debugging menu
-
-// Tips for Getting Started: 
-//   1. Use the Solution Explorer window to add/manage files
-//   2. Use the Team Explorer window to connect to source control
-//   3. Use the Output window to see build output and other messages
-//   4. Use the Error List window to view errors
-//   5. Go to Project > Add New Item to create new code files, or Project > Add Existing Item to add existing code files to the project
-//   6. In the future, to open this project again, go to File > Open > Project and select the .sln file

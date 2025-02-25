@@ -29,6 +29,7 @@
     <Text Include="empty example.txt" />
     <Text Include="data.txt" />
     <Text Include="result.txt" />
+    <Text Include="data2.txt" />
   </ItemGroup>
   <ItemGroup>
     <None Include="file.lol" />
