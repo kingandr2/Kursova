@@ -3,10 +3,22 @@
 #include "FileManager.cpp"
 #include "Counters.cpp"
 #include <locale>
+#include <codecvt>
 #include <algorithm>
+#include <unordered_set>
 
 using namespace std;
 
+std::wstring utf8_to_wstring(const std::string& str) {
+	std::wstring_convert<std::codecvt_utf8<wchar_t>, wchar_t> converter;
+	return converter.from_bytes(str);
+}
+
+// Функція для конвертації std::wstring у std::string (UTF-8)
+std::string wstring_to_utf8(const std::wstring& wstr) {
+	std::wstring_convert<std::codecvt_utf8<wchar_t>, wchar_t> converter;
+	return converter.to_bytes(wstr);
+}
 
 int main()
 {
@@ -43,7 +55,29 @@ int main()
 			continue;
 		}
 	}
-    
+	wstring read2 = utf8_to_wstring(read); // Конвертуємо в wstring
+	string error = ""; // Збереження помилок
+	//wstring abetka = L"абвгґдеєжзиіїйклмнопрстуфхцчьюяАБВГҐДЕЄЖЗИІЇЙКЛМНОПРСТУФХЦЧЬЮЯ";
+	wstring abetka_w = L"абвгґдеєжзиіїйклмнопрстуфхцчьюяАБВГҐДЕЄЖЗИІЇЙКЛМНОПРСТУФХЦЧЬЮЯ";
+	std::unordered_set<wchar_t> abetka(abetka_w.begin(), abetka_w.end());
+	bool isWrong = true;
+
+	// Перевірка символів
+	for (int i = 0; i < read2.length(); i++) {
+		bool found = false;
+
+		if (abetka.find(read2[i]) == abetka.end()) {  // Символ не знайдено в алфавіті
+			error += "Помилка: \'" + wstring_to_utf8(wstring(1, read2[i])) + "\' не є дійсним символом.\n";
+			read2 = read2.substr(read2.find(' ', i), read2.length());
+		}
+
+		/*if (!found) {
+			error += "Помилка: \'" + wstring_to_utf8(wstring(1, read2[i])) + "\' не є дійсним символом.\n";
+			read2 = read2.substr(read2.find(' ', i), read2.length());
+		}*/
+	}
+	cout << error << endl;
+	manager->write(error);
 	CountVoiceless count1 = CountVoiceless();
 	CountVoiced count2 = CountVoiced();
 	CountSoft count3 = CountSoft();
