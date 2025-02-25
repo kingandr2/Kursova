@@ -1,4 +1,14 @@
-﻿  Kursova.cpp
+﻿  Counters.cpp
+C:\Users\Andrew\source\repos\Kursova\Kursova\Counters.cpp(31,15): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\Andrew\source\repos\Kursova\Kursova\Counters.cpp(31,80): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\Andrew\source\repos\Kursova\Kursova\Counters.cpp(57,15): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\Andrew\source\repos\Kursova\Kursova\Counters.cpp(57,80): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\Andrew\source\repos\Kursova\Kursova\Counters.cpp(88,15): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\Andrew\source\repos\Kursova\Kursova\Counters.cpp(88,80): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\Andrew\source\repos\Kursova\Kursova\Counters.cpp(118,15): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\Andrew\source\repos\Kursova\Kursova\Counters.cpp(118,80): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+  FileManager.cpp
+  Kursova.cpp
 C:\Users\Andrew\source\repos\Kursova\Kursova\Counters.cpp(31,15): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
   (compiling source file 'Kursova.cpp')
   
@@ -23,4 +33,11 @@ C:\Users\Andrew\source\repos\Kursova\Kursova\Counters.cpp(118,15): warning C4267
 C:\Users\Andrew\source\repos\Kursova\Kursova\Counters.cpp(118,80): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
   (compiling source file 'Kursova.cpp')
   
+C:\Users\Andrew\source\repos\Kursova\Kursova\Kursova.cpp(12,33): warning C4305: 'return': truncation from 'int' to 'bool'
+C:\Users\Andrew\source\repos\Kursova\Kursova\Kursova.cpp(13,33): warning C4305: 'return': truncation from 'int' to 'bool'
+C:\Users\Andrew\source\repos\Kursova\Kursova\Kursova.cpp(14,33): warning C4305: 'return': truncation from 'int' to 'bool'
+C:\Users\Andrew\source\repos\Kursova\Kursova\Kursova.cpp(15,9): warning C4305: 'return': truncation from 'int' to 'bool'
+C:\Users\Andrew\source\repos\Kursova\Kursova\Kursova.cpp(69,32): warning C4806: '==': unsafe operation: no value of type 'bool' promoted to type 'int' can equal the given constant
+C:\Users\Andrew\source\repos\Kursova\Kursova\Kursova.cpp(80,32): warning C4806: '==': unsafe operation: no value of type 'bool' promoted to type 'int' can equal the given constant
+  Generating Code...
   Kursova.vcxproj -> C:\Users\Andrew\source\repos\Kursova\x64\Debug\Kursova.exe
