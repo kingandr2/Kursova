@@ -10,7 +10,7 @@ using namespace std;
 
 int main()
 {
-	setlocale(LC_ALL, "ukrainian");
+	setlocale(0, "ua_UA.UTF-8");
     string readFile, writeFile;
     cout << "Введіть файл з даними:" << endl;
     cin >> readFile;
