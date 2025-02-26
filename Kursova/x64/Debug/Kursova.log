@@ -1,14 +1,4 @@
-﻿  Counters.cpp
-C:\Users\Andrew\source\repos\Kursova\Kursova\Counters.cpp(31,15): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-C:\Users\Andrew\source\repos\Kursova\Kursova\Counters.cpp(31,80): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
-C:\Users\Andrew\source\repos\Kursova\Kursova\Counters.cpp(57,15): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-C:\Users\Andrew\source\repos\Kursova\Kursova\Counters.cpp(57,80): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
-C:\Users\Andrew\source\repos\Kursova\Kursova\Counters.cpp(88,15): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-C:\Users\Andrew\source\repos\Kursova\Kursova\Counters.cpp(88,80): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
-C:\Users\Andrew\source\repos\Kursova\Kursova\Counters.cpp(118,15): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-C:\Users\Andrew\source\repos\Kursova\Kursova\Counters.cpp(118,80): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
-  FileManager.cpp
-  Kursova.cpp
+﻿  Kursova.cpp
 C:\Users\Andrew\source\repos\Kursova\Kursova\Counters.cpp(31,15): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
   (compiling source file 'Kursova.cpp')
   
@@ -33,5 +23,5 @@ C:\Users\Andrew\source\repos\Kursova\Kursova\Counters.cpp(118,15): warning C4267
 C:\Users\Andrew\source\repos\Kursova\Kursova\Counters.cpp(118,80): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
   (compiling source file 'Kursova.cpp')
   
-  Generating Code...
+C:\Users\Andrew\source\repos\Kursova\Kursova\Kursova.cpp(66,67): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
   Kursova.vcxproj -> C:\Users\Andrew\source\repos\Kursova\x64\Debug\Kursova.exe

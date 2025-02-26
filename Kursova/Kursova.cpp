@@ -6,7 +6,7 @@
 #include <codecvt>
 #include <algorithm>
 #include <unordered_set>
-
+#include <regex>
 using namespace std;
 
 std::wstring utf8_to_wstring(const std::string& str) {
@@ -55,26 +55,23 @@ int main()
 			continue;
 		}
 	}
-	wstring read2 = utf8_to_wstring(read); // Конвертуємо в wstring
+	string read2 = read; // Конвертуємо в wstring
 	string error = ""; // Збереження помилок
 	//wstring abetka = L"абвгґдеєжзиіїйклмнопрстуфхцчьюяАБВГҐДЕЄЖЗИІЇЙКЛМНОПРСТУФХЦЧЬЮЯ";
 	wstring abetka_w = L"абвгґдеєжзиіїйклмнопрстуфхцчьюяАБВГҐДЕЄЖЗИІЇЙКЛМНОПРСТУФХЦЧЬЮЯ";
 	std::unordered_set<wchar_t> abetka(abetka_w.begin(), abetka_w.end());
 	bool isWrong = true;
-
+	regex ukr_regex("^[абвгґдеєжзиіїйклмнопрстуфхцчшщьюяАБВГҐДЕЄЖЗИІЇЙКЛМНОПРСТУФХЦЧШЩЬЮЯ’`\',\\. ]+");
 	// Перевірка символів
-	for (int i = 0; i < read2.length(); i++) {
-		bool found = false;
-
-		if (abetka.find(read2[i]) == abetka.end()) {  // Символ не знайдено в алфавіті
-			error += "Помилка: \'" + wstring_to_utf8(wstring(1, read2[i])) + "\' не є дійсним символом.\n";
-			read2 = read2.substr(read2.find(' ', i), read2.length());
+	for (int i = 0; i != -1 && i < read2.length() - 1; i = read2.find(' ')) {
+		string line = read2.substr(i + 1, read2.find(' ', i + 1) - 1);
+		if (i + 1 > read2.length() || read2.find(' ', i + 1) == -1) {
+			read2 = read2.substr(1, read2.length());
 		}
-
-		/*if (!found) {
-			error += "Помилка: \'" + wstring_to_utf8(wstring(1, read2[i])) + "\' не є дійсним символом.\n";
-			read2 = read2.substr(read2.find(' ', i), read2.length());
-		}*/
+		else
+			read2 = read2.substr(read2.find(' ', i + 1), read2.length() - 1);
+		if (!regex_match(line, ukr_regex) && line != "")
+			error += "Помилка у рядку \"" + line + "\". Невідомий символ.\n";
 	}
 	cout << error << endl;
 	manager->write(error);
